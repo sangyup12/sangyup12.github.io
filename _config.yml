@@ -107,7 +107,11 @@ social_preview_image: # string, local or CORS resources
 # boolean type, the global switch for TOC in posts.
 toc: true
 
-comments:
+comments: 
+  active: utterances        # 사용할 댓글 서비스: utterances라고 적음.
+  utterances:
+      repo:         sangyup12/sangyup12.github.io  # 3의 "Repository"에서 입력한 Repository
+      issue_term:   pathname # 3의 "Blog Post ↔️ Issue Mapping"에서 선택한 방법.
   # Global switch for the post-comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
   # The provider options are as follows:
